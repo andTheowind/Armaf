@@ -538,94 +538,6 @@ main {
 	cursor: pointer;
 }
 
-.custom-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 2px;
-    border: none;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    -webkit-transition: ease 0.3s;
-    transition: ease 0.3s;
-}
-
-.custom-btn:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fa4923;
-    opacity: 0;
-    z-index: 1;
-    -webkit-transition: ease 0.3s;
-    transition: ease 0.3s;
-}
-
-.custom-btn:after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 500px;
-    margin-left: 60px;
-    background: #fff;
-    position: absolute;
-    top: -150px;
-    z-index: 1;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-    -webkit-animation-name: slideme;
-    animation-name: slideme;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-delay: 0.05s;
-    animation-delay: 0.05s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-
-
-
-
-
-@keyframes glowing {
-      0% { background: #ffffffbd;; box-shadow: 0 0 5px #2db1fabd; }
-      50% { background-color: #2db1fabd; box-shadow: 0 0 20px #2db1fabd; }
-      100% { background: #ffffffbd; box-shadow: 0 0 5px #2db1fabd; }
-      }
-      .button {
-      animation: glowing 1300ms infinite;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -633,7 +545,20 @@ main {
 
 @-webkit-keyframes slideme { 0% { left: -30px; margin-left: 0px; }
   30% { left: 110%; margin-left: 80px; }
-  100% { left: 110%; margin-left: 80px; } }
+  100% { left: 110%; margin-left: 80px; } 
+}
+@keyframes glowing {
+      0% { background: #ffffffbd;; box-shadow: 0 0 5px #43f3d9bd; }
+      50% { background-color: #43f3d9bd; box-shadow: 0 0 20px #43f3d9bd; }
+      100% { background: #ffffffbd; box-shadow: 0 0 5px #43f3d9bd; }
+      }
+      .button {
+      animation: glowing 1400ms infinite;
+}
+
+
+
+
 
 @media screen and (min-width: 1200px) {
 	.card-glr-mobile, .blue-mobile-sctn-2, .blue-block-mobile-1 {
